@@ -100,6 +100,8 @@ section {
   background-repeat: no-repeat;
   height: 115vh;
   background-position: center;
+
+  padding-top: 7rem;
 }
 
 .homebody{
@@ -168,8 +170,9 @@ section {
     background-image: url("images/budjettech.png");
     background-size: cover;
     color: var(--third-color);
-  
+    
     height: 100vh;
+    padding-top: 7rem;
 }
 
 .contactbg {
@@ -190,7 +193,7 @@ section {
   
 .TextPosFix {
   position: relative;
-  top: 13rem;
+  top: 6rem;
   width:50%;
   left:9%;
 }
