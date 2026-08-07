@@ -547,7 +547,7 @@ ul {
 }
 
 .sponsorlistsection {
-  min-height: 70vh;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   background-image: url(images/earth.jpg);
