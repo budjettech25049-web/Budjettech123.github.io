@@ -16,55 +16,41 @@ window.onscroll = function(){
     prevScrollPos = currentScrollPos;
 }
 
-const slides = [
-  {
-    image: "students.jpg",
-    title: "First Slide",
-    description: "This is the text for the first slide."
-  },
-  {
-    image: "seniors.jpg",
-    title: "Second Slide",
-    description: "This is the text for the second slide."
-  },
-  {
-    image: "calls.jpg",
-    title: "Third Slide",
-    description: "This is the text for the third slide."
-  }
-];
+const slides = document.querySelectorAll(".slide");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
 
 let currentSlide = 0;
 
-const slideImage = document.getElementById("slideImage");
-const slideTitle = document.getElementById("slideTitle");
-const slideDescription = document.getElementById("slideDescription");
+function showSlide(number) {
+    slides.forEach(slide => {
+        slide.style.display = "none";
+    });
 
-function showSlide() {
-  slideImage.src = slides[currentSlide].image;
-  slideTitle.textContent = slides[currentSlide].title;
-  slideDescription.textContent = slides[currentSlide].description;
+    slides[number].style.display = "flex";
 }
 
-document.getElementById("next").addEventListener("click", function () {
-  currentSlide++;
+next.addEventListener("click", function() {
+    currentSlide++;
 
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
-  }
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;
+    }
 
-  showSlide();
+    showSlide(currentSlide);
 });
 
-document.getElementById("prev").addEventListener("click", function () {
-  currentSlide--;
+prev.addEventListener("click", function() {
+    currentSlide--;
 
-  if (currentSlide < 0) {
-    currentSlide = slides.length - 1;
-  }
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+    }
 
-  showSlide();
+    showSlide(currentSlide);
 });
+
+showSlide(currentSlide);
 const mouse = document.querySelector('.sponsorlistsection')
 const front = document.querySelector('.front-layer')
 const back = document.querySelector('.back-layer')
