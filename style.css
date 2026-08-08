@@ -175,7 +175,13 @@ section {
     height: 100vh;
     padding-top: 7rem;
 }
-
+.sponsorbg {
+    background-image: url("images/backgroundplswork.JPG");
+    background-size: cover;
+    color: var(--third-color);
+  
+    height: 100vh;
+}
 .contactbg {
     background-image: url("images/backgroundplswork.JPG");
     background-size: cover;
