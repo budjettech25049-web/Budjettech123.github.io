@@ -160,6 +160,7 @@ section {
 .homebody5 {
   background-color: black;
   height: 80vh;
+  width: 100%
   background-image: url("images/collage.jpg");
   background-repeat: no-repeat;
   background-size:contain;
