@@ -287,6 +287,44 @@ ul {
   background-color: #ffffff;
 }
 
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.slide-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.slide-content img {
+  width: 400px;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.slide-text {
+  flex: 1;
+}
+
+.arrow {
+  font-size: 35px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
