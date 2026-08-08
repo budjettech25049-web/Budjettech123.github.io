@@ -175,8 +175,8 @@ section {
     height: 100vh;
     padding-top: 7rem;
 }
-.sponsorbg {
-    background-image: url("images/backgroundplswork.JPG");
+.outreachbg {
+    background-image: url("images/sponsor.jpg");
     background-size: cover;
     color: var(--third-color);
   
