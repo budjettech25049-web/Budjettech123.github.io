@@ -1,1 +1,106 @@
+<!-- update -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>BudjetTech</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="images/icon_bj.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
 
+  <body>
+    <!-- nav bar -->
+    <nav class="top-nav">
+      <ul>
+        <img src="images/menu_img.png" style="width: 20%" />
+        <li><a href="index.html">Home</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="robot.html">Robot</a></li>
+        <li><a href="sponsor.html">Sponsor Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- sections -->
+    <section class="contactbg">
+      <div class="TextPosFix">
+        <h1>Contact Us</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="instructioncard" style="max-width: fit-content;
+      margin-left: auto;
+      margin-right: auto;">
+      <h1 style="padding: 0;text-align: left;">Contact Us</h1><div style="display: flex;">
+      <div class="contact-section">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d605.2618340558973!2d-79.32022384760045!3d43.81173090136003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d391096f94c7%3A0xe8860b0ba7d1ad10!2sDr.%20Norman%20Bethune%20Collegiate%20Institute!5e0!3m2!1sen!2sca!4v1735161663187!5m2!1sen!2sca"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+        <form action="https://formsubmit.co/budjettech25049@gmail.com" method="POST">
+          
+            <!-- Redirect after successful submission -->
+          <input type="hidden" name="_next" value="https://budjettech25049-web.github.io/Budjettech123.github.io/thankyou.html">
+        
+            <!-- Subject line of the email -->
+          <input type="hidden" name="_subject" value="New Sponsor Inquiry">
+          <label>Your Name*</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            placeholder="Full Name"
+            required>
+  
+          <label>Your Email*</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="Email Address"
+            required>
+  
+          <label>Your Message*</label>
+          <textarea
+              class= "form-control"
+              name="message"
+              placeholder="Your Message"
+              required></textarea>
+      
+          <button type="submit">Send Message</button>
+        
+        </form>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
+    
