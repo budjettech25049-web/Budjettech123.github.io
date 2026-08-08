@@ -157,7 +157,14 @@ section {
 .homebody4 .sponsorbutton{
   background-color: transparent;
 }
-
+.homebody5 {
+  background-color: black;
+  height: 80vh;
+  background-image: url("images/collage.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: -40%;
+}
 .robotbg {
   background-image: url("images/budjettechbotreal.png");
   background-size: cover;
