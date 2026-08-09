@@ -58,7 +58,10 @@ sliders.forEach(slider => {
     });
 
     showSlide(currentSlide);
+
 });
+
+
 const mouse = document.querySelector('.sponsorlistsection')
 const front = document.querySelector('.front-layer')
 const back = document.querySelector('.back-layer')
