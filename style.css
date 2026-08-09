@@ -164,11 +164,12 @@ section {
   background-size:cover;
 }
 .robotbg {
-  background-image: url("images/budjettechbotreal.png");
-  background-size: cover;
-  color: var(--third-color);
-
-  height: 100vh;
+    background-image: url("images/budjettechbotreal.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--third-color);
+    height: 100vh;
+    padding-top: 7rem;
 }
 
 
