@@ -693,12 +693,13 @@ ul {
   }
 
 .instructioncard {
-  width: 100vh;
-  padding: 40px;
-    margin: 30px 15px;
+    width: 80%;
+    max-width: 800px;
+    padding: 40px;
+    margin: 30px auto;
     border-radius: 10px;
     box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
-    3px 3px 10px -1px rgba(0, 0, 0, 0.7);
+                3px 3px 10px -1px rgba(0,0,0,0.7);
     backdrop-filter: blur(20px);
     background-color: rgba(255,255,255,0.6);
 }
@@ -892,16 +893,16 @@ button:hover {
 
     .top-nav ul {
         width: 100%;
-        gap: 3px;
+        gap: 0;
+        justify-content: space-evenly;
     }
 
     .top-nav ul img {
-        width: 15% !important;
-        height: auto;
+        width: 12% !important;
     }
 
     nav ul li a {
-        font-size: 0.65rem;
+        font-size: 0.55rem;
     }
 
     .top-nav.scroll {
@@ -914,7 +915,8 @@ button:hover {
     ========================= */
 
     h1 {
-        font-size: 12vw;
+        font-size: 10vw;
+        line-height: 1.1;
         margin-bottom: 1rem;
     }
 
@@ -1006,7 +1008,7 @@ button:hover {
     }
 
     .dime-container {
-        width: 100%;
+        width: 90%;
         max-width: none;
         margin: 0 auto;
         padding-top: 60px;
@@ -1024,26 +1026,26 @@ button:hover {
 
     .dime-label {
         padding: 7px 9px;
-        font-size: 9px;
-        line-height: 1.2;
+        font-size: 10px;
+        line-height: 1.25;
     }
 
     .label-left {
-        left: 0;
+        left: -5%;
         top: 45%;
-        max-width: 105px;
+        max-width: 115px;
     }
-
+    
     .label-top-right {
-        right: 0;
+        right: -5%;
         top: 25%;
-        max-width: 120px;
+        max-width: 130px;
     }
-
+    
     .label-bottom-right {
-        right: 0;
+        right: -5%;
         top: 60%;
-        max-width: 105px;
+        max-width: 115px;
     }
 
 
@@ -1061,7 +1063,7 @@ button:hover {
     .slider {
         width: 100%;
         margin: 30px auto;
-        gap: 0;
+        gap: 5px;
     }
 
     .slides {
@@ -1152,9 +1154,7 @@ button:hover {
 
     .instructioncard {
         width: 90%;
-        max-width: 100%;
         padding: 20px;
-        margin: 20px auto;
     }
 
 
@@ -1180,7 +1180,8 @@ button:hover {
     }
 
     button {
-        max-width: 100%;
+        width: 160px;
+        max-width: 90%;
     }
 
 
