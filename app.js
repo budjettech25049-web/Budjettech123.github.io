@@ -62,39 +62,37 @@ sliders.forEach(slider => {
 });
 
 const dimeSection = document.querySelector(".dime-section");
-
 const dimeLabels = document.querySelectorAll(".dime-label");
 
-window.addEventListener("scroll", () => {
+if (dimeSection) {
 
-    const sectionPosition = dimeSection.getBoundingClientRect();
+    window.addEventListener("scroll", () => {
 
-    const screenHeight = window.innerHeight;
+        const sectionPosition = dimeSection.getBoundingClientRect();
+        const screenHeight = window.innerHeight;
 
-    // How far the section has entered the screen
-    let progress = 1 - (sectionPosition.top / screenHeight);
+        let progress = 1 - (sectionPosition.top / screenHeight);
 
-    progress = Math.max(0, Math.min(1, progress));
+        progress = Math.max(0, Math.min(1, progress));
 
+        // First label
+        if (progress > 0.25) {
+            dimeLabels[0].classList.add("show");
+        }
 
-    // First label
-    if (progress > 0.25) {
-        dimeLabels[0].classList.add("show");
-    }
+        // Second label
+        if (progress > 0.40) {
+            dimeLabels[1].classList.add("show");
+        }
 
+        // Third label
+        if (progress > 0.55) {
+            dimeLabels[2].classList.add("show");
+        }
 
-    // Second label
-    if (progress > 0.40) {
-        dimeLabels[1].classList.add("show");
-    }
+    });
 
-
-    // Third label
-    if (progress > 0.55) {
-        dimeLabels[2].classList.add("show");
-    }
-
-});
+}
 
 const mouse = document.querySelector('.sponsorlistsection')
 const front = document.querySelector('.front-layer')
