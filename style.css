@@ -158,9 +158,8 @@ section {
   background-color: transparent;
 }
 .homebody5 {
-  background-color: black;
+  background-color: rgb(255, 244, 227);
   height: 80vh;
-  background-image: url("images/collage.jpg");
   background-repeat: no-repeat;
   background-size:cover;
 }
