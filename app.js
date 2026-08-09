@@ -16,41 +16,49 @@ window.onscroll = function(){
     prevScrollPos = currentScrollPos;
 }
 
-const slides = document.querySelectorAll(".slide");
-const next = document.querySelector(".next");
-const prev = document.querySelector(".prev");
+const sliders = document.querySelectorAll(".slider");
 
-let currentSlide = 0;
+sliders.forEach(slider => {
 
-function showSlide(number) {
-    slides.forEach(slide => {
-        slide.style.display = "none";
+    const slides = slider.querySelectorAll(".slide");
+    const next = slider.querySelector(".next");
+    const prev = slider.querySelector(".prev");
+
+    let currentSlide = 0;
+
+    function showSlide(number) {
+
+        slides.forEach(slide => {
+            slide.style.display = "none";
+        });
+
+        slides[number].style.display = "flex";
+    }
+
+    next.addEventListener("click", function() {
+
+        currentSlide++;
+
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+
+        showSlide(currentSlide);
     });
 
-    slides[number].style.display = "flex";
-}
+    prev.addEventListener("click", function() {
 
-next.addEventListener("click", function() {
-    currentSlide++;
+        currentSlide--;
 
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
-    }
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
 
-    showSlide(currentSlide);
-});
-
-prev.addEventListener("click", function() {
-    currentSlide--;
-
-    if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
-    }
+        showSlide(currentSlide);
+    });
 
     showSlide(currentSlide);
 });
-
-showSlide(currentSlide);
 const mouse = document.querySelector('.sponsorlistsection')
 const front = document.querySelector('.front-layer')
 const back = document.querySelector('.back-layer')
