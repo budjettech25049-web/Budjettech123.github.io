@@ -221,11 +221,20 @@ section {
     overflow: hidden;
 }
 
+.dime-section h2 {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    white-space: nowrap;
+}
+
 .dime-container {
     position: relative;
-
-    width: 90%;
+    width: 85%;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .dime-robot {
@@ -257,7 +266,7 @@ section {
 /* LEFT LABEL */
 
 .label-left {
-    left: -2%;
+    left: 0;
     top: 45%;
 
     transform: translateX(-100%);
