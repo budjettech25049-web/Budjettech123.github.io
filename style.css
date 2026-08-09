@@ -211,6 +211,88 @@ section {
   left:9%;
 }
 
+.dime-section {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.dime-container {
+    position: relative;
+
+    width: 90%;
+    max-width: 1000px;
+}
+
+.dime-robot {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   LABELS
+   ========================= */
+
+.dime-label {
+    position: absolute;
+
+    background: #9bc6f2;
+    color: white;
+
+    padding: 12px 15px;
+
+    opacity: 0;
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+/* LEFT LABEL */
+
+.label-left {
+    left: -2%;
+    top: 45%;
+
+    transform: translateX(-100%);
+}
+
+
+/* TOP RIGHT LABEL */
+
+.label-top-right {
+    right: -2%;
+    top: 25%;
+
+    transform: translateX(100%);
+}
+
+
+/* BOTTOM RIGHT LABEL */
+
+.label-bottom-right {
+    right: -2%;
+    top: 60%;
+
+    transform: translateX(100%);
+}
+
+
+/* =========================
+   WHEN LABELS ARE VISIBLE
+   ========================= */
+
+.dime-label.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* footer */
 #footer-padding {
   padding: 0;
