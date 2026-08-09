@@ -863,58 +863,345 @@ button:hover {
     justify-content: center;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-h1{
-  margin-bottom: 1rem;
-  color: rgb(255, 255, 255);
-  font-size: 25vw;
-  background-image: linear-gradient(90deg, rgb(254, 99, 244), rgb(77, 221, 249));
-  text-webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-  .top-nav{
-    position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 15%;
-  background-color: var(--second-color);
-  padding: 0;
-  z-index: 2;
-  transition: 0.5s;
-  }
+@media (max-width: 600px) {
 
-  .homebg {
-    background-image: url("images/budjettech.png");
-    background-size: cover;
-    color: var(--third-color);
-    background-repeat: no-repeat;
-    height: 200vh;
-    width: 300%;
-    background-position: center;
-  }
+    /* =========================
+       GENERAL
+    ========================= */
 
-  .TextPosFix {
-    position: relative;
-    top: 30rem;
-    width:50%;
-    left:9%;
-  }
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
-  .homebody{
-    background-color: black;
-  height: 80vh;
-  width: 100%;
-  background-image: url("images/driving.png");
-  background-repeat: no-repeat;
-  background-size:contain;
-  background-position: 150%;
-}
+    section {
+        padding: 15px;
+    }
 
-.homebody .TextPosFix {
-   top:20rem;
-   bottom: ;
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    .top-nav {
+        height: 60px;
+        padding: 0;
+    }
+
+    .top-nav ul {
+        width: 100%;
+        gap: 3px;
+    }
+
+    .top-nav ul img {
+        width: 15% !important;
+        height: auto;
+    }
+
+    nav ul li a {
+        font-size: 0.65rem;
+    }
+
+    .top-nav.scroll {
+        top: -60px;
+    }
+
+
+    /* =========================
+       HEADINGS
+    ========================= */
+
+    h1 {
+        font-size: 12vw;
+        margin-bottom: 1rem;
+    }
+
+
+    /* =========================
+       TEXT POSITION
+    ========================= */
+
+    .TextPosFix {
+        position: relative;
+        top: 8rem;
+        left: 5%;
+        width: 90%;
+    }
+
+
+    /* =========================
+       HOME
+    ========================= */
+
+    .homebg {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        padding-top: 60px;
+    }
+
+
+    /* =========================
+       HOME BODY SECTIONS
+    ========================= */
+
+    .homebody,
+    .homebody2,
+    .homebody3,
+    .homebody4 {
+        width: 100%;
+        height: 80vh;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .homebody .TextPosFix,
+    .homebody2 .TextPosFix,
+    .homebody3 .TextPosFix,
+    .homebody4 .TextPosFix {
+        top: 5rem;
+        left: 5%;
+        width: 90%;
+        margin-left: 0;
+        text-align: left;
+    }
+
+
+    /* =========================
+       ROBOT HEADER
+    ========================= */
+
+    .robotbg {
+        width: 100%;
+        height: 100vh;
+        padding-top: 60px;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* =========================
+       DIME SECTION
+    ========================= */
+
+    .dime-section {
+        min-height: 100vh;
+        width: 100%;
+        padding: 15px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dime-section h2 {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        font-size: 1.5rem;
+        white-space: normal;
+    }
+
+    .dime-container {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        padding-top: 60px;
+    }
+
+    .dime-robot {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* =========================
+       ROBOT LABELS
+    ========================= */
+
+    .dime-label {
+        padding: 7px 9px;
+        font-size: 9px;
+        line-height: 1.2;
+    }
+
+    .label-left {
+        left: 0;
+        top: 45%;
+        max-width: 105px;
+    }
+
+    .label-top-right {
+        right: 0;
+        top: 25%;
+        max-width: 120px;
+    }
+
+    .label-bottom-right {
+        right: 0;
+        top: 60%;
+        max-width: 105px;
+    }
+
+
+    /* =========================
+       OUTREACH SLIDER
+    ========================= */
+
+    .homebody5 {
+        width: 100%;
+        height: auto;
+        min-height: 80vh;
+        padding: 20px 0;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 30px auto;
+        gap: 0;
+    }
+
+    .slides {
+        width: 78%;
+    }
+
+    .slide {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .slide img {
+        width: 100%;
+        max-width: 280px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .slide-text {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .slide-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .slide-text p {
+        font-size: 0.9rem;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer {
+        padding: 40px 15px;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+
+    /* =========================
+       SPONSOR CARDS
+    ========================= */
+
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .wrapper .card {
+        width: 90%;
+        max-width: 350px;
+        margin: 15px auto;
+        padding: 25px;
+    }
+
+
+    /* =========================
+       PRICE TABLE
+    ========================= */
+
+    .pricetable {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 20px 10px;
+    }
+
+    .pricetable h1 {
+        font-size: 10vw;
+        padding-top: 20px;
+    }
+
+    .instructioncard {
+        width: 90%;
+        max-width: 100%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+
+    /* =========================
+       CONTACT FORM
+    ========================= */
+
+    .contact-container {
+        width: 90%;
+        max-width: 500px;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    button {
+        max-width: 100%;
+    }
+
+
+    /* =========================
+       SPONSOR LIST
+    ========================= */
+
+    .sponsorlistsection {
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .sponsorlistsection h1 {
+        width: 90%;
+        font-size: 1.8rem;
+    }
+
+    .front-layer img,
+    .back-layer img {
+        max-width: 70px;
+        max-height: 70px;
+    }
+
 }
-}
-/* not stolen from bear bella trust */
